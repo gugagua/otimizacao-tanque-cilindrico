@@ -1,0 +1,52 @@
+Solução analítica de referência: {'r': 3.56931, 'h': 12.49258, 'custo': 42024.95238, 'volume': 500.0, 'h_sobre_r': 3.5, 'lambda': 56.03327}
+
+[1] Caso base
+  mu=1e+02 alpha=1.0e-07 delta=1e-05 | convergiu (grad)   it=  998075 t=  1.40s | r=3.5584 h=12.5622 f=42009.54 V=499.719 erro_f=0.037%
+
+[2] Variação de alpha (mu = 1e2)
+  mu=1e+02 alpha=1.0e-03 delta=1e-05 | divergiu           it=       3 t=  0.00s | r=-942.8899 h=-78.6004 f=1024117697.31 V=-219531304.225 erro_f=2436827.681%
+  mu=1e+02 alpha=1.0e-05 delta=1e-05 | max_iter           it= 3000000 t=  3.98s | r=4.8951 h=9.5008 f=55569.45 V=715.216 erro_f=32.230%
+  mu=1e+02 alpha=1.0e-06 delta=1e-05 | max_iter           it= 3000000 t=  3.91s | r=3.6520 h=12.3278 f=42952.31 V=516.528 erro_f=2.207%
+  mu=1e+02 alpha=2.0e-07 delta=1e-05 | max_iter           it= 3000000 t=  4.06s | r=3.5621 h=12.5234 f=41980.82 V=499.211 erro_f=0.105%
+  mu=1e+02 alpha=1.0e-07 delta=1e-05 | convergiu (grad)   it=  998075 t=  1.35s | r=3.5584 h=12.5622 f=42009.54 V=499.719 erro_f=0.037%
+  mu=1e+02 alpha=5.0e-08 delta=1e-05 | convergiu (grad)   it= 1996176 t=  2.70s | r=3.5584 h=12.5622 f=42009.54 V=499.719 erro_f=0.037%
+  mu=1e+02 alpha=1.0e-08 delta=1e-05 | max_iter           it= 3000000 t=  4.07s | r=3.5677 h=12.4969 f=42009.18 V=499.718 erro_f=0.038%
+
+[3] Variação de mu (alpha ajustado a cada mu)
+  mu=1e+01 alpha=1.0e-06 delta=1e-05 | convergiu (grad)   it=   98296 t=  0.13s | r=3.5616 h=12.4762 f=41867.47 V=497.192 erro_f=0.375%
+  mu=1e+02 alpha=1.0e-07 delta=1e-05 | convergiu (grad)   it=  998072 t=  1.35s | r=3.5584 h=12.5622 f=42009.54 V=499.719 erro_f=0.037%
+  mu=1e+03 alpha=1.0e-08 delta=1e-05 | max_iter           it= 3000000 t=  4.10s | r=3.4796 h=13.1440 f=42050.26 V=499.971 erro_f=0.060%
+  mu=1e+04 alpha=1.0e-09 delta=1e-05 | max_iter           it= 3000000 t=  4.17s | r=3.8087 h=10.9712 f=42205.92 V=499.996 erro_f=0.431%
+  mu=1e+05 alpha=1.0e-10 delta=1e-05 | max_iter           it= 3000000 t=  4.15s | r=4.8939 h=6.6453 f=46768.12 V=499.999 erro_f=11.287%
+  mu=1e+06 alpha=1.0e-11 delta=1e-05 | max_iter           it= 3000000 t=  3.98s | r=5.9123 h=4.5531 f=55349.09 V=500.000 erro_f=31.705%
+
+[4] Mapa de estabilidade: combinações (mu, alpha)
+  mu=1e+02 alpha=1.0e-03 delta=1e-05 | divergiu           it=       3 t=  0.00s | r=-942.8899 h=-78.6004 f=1024117697.31 V=-219531304.225 erro_f=2436827.681%
+  mu=1e+02 alpha=1.0e-05 delta=1e-05 | max_iter           it=  300000 t=  0.39s | r=4.2587 h=9.4541 f=45239.84 V=538.675 erro_f=7.650%
+  mu=1e+02 alpha=1.0e-07 delta=1e-05 | max_iter           it=  300000 t=  0.44s | r=3.5677 h=12.4969 f=42009.18 V=499.718 erro_f=0.038%
+  mu=1e+02 alpha=1.0e-09 delta=1e-05 | max_iter           it=  300000 t=  0.43s | r=5.3589 h=5.5380 f=50223.40 V=499.632 erro_f=19.509%
+  mu=1e+02 alpha=1.0e-11 delta=1e-05 | max_iter           it=  300000 t=  0.44s | r=6.0488 h=4.3465 f=56749.82 V=499.605 erro_f=35.038%
+  mu=1e+04 alpha=1.0e-03 delta=1e-05 | divergiu           it=       3 t=  0.00s | r=-94482.9073 h=-8010.4894 f=10291316509109.28 V=-224654653562299.312 erro_f=24488585673.909%
+  mu=1e+04 alpha=1.0e-05 delta=1e-05 | divergiu           it=     118 t=  0.00s | r=17393.0832 h=-39.7467 f=332203021176.39 V=-37775008580.790 erro_f=790489840.838%
+  mu=1e+04 alpha=1.0e-07 delta=1e-05 | max_iter           it=  300000 t=  0.40s | r=3.7097 h=12.3710 f=43966.39 V=534.836 erro_f=4.620%
+  mu=1e+04 alpha=1.0e-09 delta=1e-05 | max_iter           it=  300000 t=  0.43s | r=5.2898 h=5.6877 f=49671.92 V=499.996 erro_f=18.196%
+  mu=1e+04 alpha=1.0e-11 delta=1e-05 | max_iter           it=  300000 t=  0.41s | r=6.0446 h=4.3559 f=56718.46 V=499.995 erro_f=34.964%
+  mu=1e+06 alpha=1.0e-03 delta=1e-05 | divergiu           it=       1 t=  0.00s | r=1.0000 h=1.0000 f=1727.88 V=3.142 erro_f=95.888%
+  mu=1e+06 alpha=1.0e-05 delta=1e-05 | divergiu           it=    2576 t=  0.00s | r=-265324.5757 h=999097.3896 f=-89152187107529.66 V=220959487484864800.000 erro_f=212141078355.814%
+  mu=1e+06 alpha=1.0e-07 delta=1e-05 | divergiu           it=   14743 t=  0.02s | r=570.2584 h=-0.0156 f=357564624.39 V=-15902.857 erro_f=850738.857%
+  mu=1e+06 alpha=1.0e-09 delta=1e-05 | max_iter           it=  300000 t=  0.42s | r=5.4447 h=5.3688 f=50963.37 V=500.014 erro_f=21.269%
+  mu=1e+06 alpha=1.0e-11 delta=1e-05 | max_iter           it=  300000 t=  0.39s | r=6.0444 h=4.3562 f=56716.83 V=500.000 erro_f=34.960%
+
+[5] Variação de delta (mu = 1e2, alpha = 1e-7)
+  mu=1e+02 alpha=1.0e-07 delta=1e-03 | max_iter           it= 3000000 t=  4.28s | r=2.6645 h=22.4222 f=45344.13 V=500.094 erro_f=7.898%
+  mu=1e+02 alpha=1.0e-07 delta=1e-05 | convergiu (grad)   it=  998075 t=  1.53s | r=3.5584 h=12.5622 f=42009.54 V=499.719 erro_f=0.037%
+  mu=1e+02 alpha=1.0e-07 delta=1e-07 | convergiu (grad)   it=  970535 t=  1.38s | r=3.5685 h=12.4909 f=42009.25 V=499.720 erro_f=0.037%
+  mu=1e+02 alpha=1.0e-07 delta=1e-09 | convergiu (grad)   it=  770527 t=  1.07s | r=3.5687 h=12.4901 f=42009.25 V=499.720 erro_f=0.037%
+
+[6] Penalização sequencial (mu = 10 ... 1e4, delta = 1e-8)
+  mu=1e+01 alpha=1.0e-06 delta=1e-08 | convergiu (grad)   it=   92686 t=  0.13s | r=3.5626 h=12.4691 f=41867.52 V=497.193 erro_f=0.375%
+  mu=1e+02 alpha=1.0e-07 delta=1e-08 | convergiu (grad)   it=  539737 t=  0.78s | r=3.5686 h=12.4903 f=42009.25 V=499.720 erro_f=0.037%
+  mu=1e+03 alpha=1.0e-08 delta=1e-08 | max_iter           it= 2000000 t=  2.79s | r=3.5692 h=12.4929 f=42023.38 V=499.972 erro_f=0.004%
+  mu=1e+04 alpha=1.0e-09 delta=1e-08 | max_iter           it= 2000000 t=  2.73s | r=3.5690 h=12.4945 f=42024.80 V=499.997 erro_f=0.000%
+
+Resultados gravados na pasta 'resultados/'.
