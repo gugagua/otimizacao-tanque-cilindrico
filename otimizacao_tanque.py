@@ -9,7 +9,7 @@
  Universidade do Estado do Rio de Janeiro - Instituto Politécnico (IPRJ)
  Disciplina: Modelagem Computacional (IPRJ01-10760 / IPRJ01-11873)
  Professor : Gustavo Barbosa Libotte
- Aluno     : Augusto Ricardo Bonow Moraes dos Santos
+ Aluno     : Augusto Ricardo Bonow Moraes dos Santos e Gabriel Soares de Souza
 -------------------------------------------------------------------------------
  Problema:
      minimizar   f(r, h) = 350*pi*r^2 + 200*pi*r*h          (custo, R$)
